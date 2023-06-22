@@ -1,138 +1,7 @@
-// // function Header({course}){
-// //   return(
-// //     <h1>{course}</h1>
-// //   )
-// // }
-
-// // function Content({part,exercise}){
-// //   return(
-  
-// //       <p>{part}{exercise}</p>
-  
-// //   )
-// // }
-// // function Total({exercises}){
-// //   return(
-// //     <p>Number Of Exercises {exercises}</p>
-// //   )
-// // }
-// // function App() {
-// //   const course='Half Stack application development';
-// //   const part1='Fundamentals of React';
-// //   const exercises1=10;
-// //   const part2='Using props to pass data';
-// //   const exercises2=7;
-// //   const part3='State of component';
-// //   const exercises3=14;
-
-//   // return (
-//   //   <div>
-//   //     <h1>{course}</h1>
-//   //     <p>{part1}{excercises1}</p>
-//   //     <p>{part2}{excercises2}</p>
-//   //     <p>{part3}{excercises3}</p>
-//   //     <p>Number of Excercises{excercises1+excercises2+excercises3}</p>
-//   //   </div>
-//   // );
-
-// // return(
-// //   <div>
-// //     <Header course={course}/>
-// //     <Content part={part1} exercise={exercises1}/>
-// //     <Content part={part2} exercise={exercises2}/>
-// //     <Content part={part3} exercise={exercises3}/>
-// //     <Total exercises={[exercises1+exercises2+exercises3]}/>
-// //   </div>
-// // );
-
-// // }
-
-// // export default App;
-
-
-// // import { useState } from 'react'
-
-// // function App() {
-// //   const [good,setGood]=useState(0);
-// // const [neutral,setNeutral]=useState(0);
-// // const [bad,setBad]=useState(0);
-
-// //   return (
-// //     <div>
-// //       <div>
-// //       <h1>give feedback</h1>
-// //       <button onClick={()=>setGood(good+1)}>good</button>
-// //       <button onClick={()=>setNeutral(neutral+1)}>neutral</button>
-// //       <button onClick={()=>setBad(bad+1)}>bad</button>
-
-// //       </div>
-// //       <div>
-// //         <h1>Statistics</h1>
-// //         <p>good {good}</p>
-// //         <p>neutral {neutral}</p>
-// //         <p>bad {bad}</p>
-// //         <p>all {good+neutral+bad}</p>
-// //         <p>average {(good+neutral+bad)/3}%</p>
-// //         <p>positivity {(good/(good+neutral+bad)*100)}%</p>
-        
-// //       </div>
-// //       </div>
-// //   );
-// // }
-
-// // export default App
-
-// import { useState } from 'react'
-
-
-// function Statistics(good,neutral,bad){
-//   return(
-//     <div>
-        
-//         <h1>Statistics</h1>
-//         <p>good {good}</p>
-//         <p>neutral {neutral}</p>
-//         <p>bad {bad}</p>
-//         <p>all {good+neutral+bad}</p>
-//         <p>average {(good+neutral+bad)/3}%</p>
-//         <p>positivity {(good/(good+neutral+bad)*100)}%</p>
-        
-//       </div>
-
-//   )
-// }
-// function Button(handleClick,text){
-//   return(
-//     <button onClick={handleClick}>{text}</button>
-//   )
-// }
-
-// function App() {
-// const [good,setGood]=useState(0);
-// const [neutral,setNeutral]=useState(0);
-// const [bad,setBad]=useState(0);
-
-//   return (
-//     <div>
-//       <div>
-//       <h1>give feedback</h1>
-//       <Button handleClick={()=>setGood(good+1)} text="good"/>
-//       <Button handleClick={()=>setNeutral(neutral+1)} text="neutral"/>
-//       <Button handleClick={()=>setGood(bad+1)} text="bad"/>
-      
-
-//       </div>
-//       <Statistics good={good} neutral={neutral} bad={bad}/>
-      
-//       </div>
-//   );
-// }
-
-// export default App
-
-
-
 import React from 'react'
+import { CSSProperties } from 'react'
+import { CssStyleClass } from '@fortawesome/fontawesome-svg-core'
+
 function List(props)
 {
   return(
@@ -149,130 +18,89 @@ function Item(props)
 function App() {
 
   return (
-    <div className="container">
-      <h4>Result  HTML  Css  JavaScript  Resources</h4>
-      <div className="row">
-        <div className="col">
-
-      <div className='card' alt="card2" width="100%">
-        <div className='card-body'>
-        <h5>PLUS</h5>
-    <h6 className='card-price text-center'>$0/month</h6>
-    <p>-----------------------------</p>
-    
-<ul><List name="Single User"/>
-  <List name="5GB Storage"/>
-  <List name="Unlimited Public Project"/>
-  <List name="Community Access"/>
-  <Item name="Unlimited Private Projects"/>
-  <Item name="Dedicated Phone Support"/>
-  <Item name="Free Sub Domain"/>
-  <Item name="Monthly Status Report"/>
-  
-  
-  </ul>
-    <button>BUTTON</button>
-     
-    </div>
-    </div>
-    </div>
-    
-    <div className="col">
-
-      <div className='card' alt="card1" width="100%">
-        <div className='card-body'>
-          
-    
-    <h5>Free</h5>
-    <h6 className='card-price text-center'>$9/month</h6>
-    <p>-----------------------------</p>
-    <ul>
-    <List name=<b>5 Users</b> />
-  <List name="50GB Storage"/>
-  <List name="Unlimited Public Projects"/>
-  <List name="Community Access"/>
-  <List name="Unlimited Private Projects"/>
-  <List name="Dedicated Phone Support"/>
-  <List name= "Free SubDomain"/>
-  <Item name="Monthly Status Report" status="disable"/>
-</ul>
-
-      <button>BUTTON</button>
+   
+<section className="pricing py-5" background-color="#007bff" background="linear-gradient(to right, #0062E6, #33AEFF)">
+  <div className="container">
+    <div className="row">
+      {/* <!-- Free Tier --> */}
+      <div className="col-lg-4">
+        <div className="card mb-5 mb-lg-0" border="none" border-radious="1rem" transition="all 0.2s" box-shadow="0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1)">
+          <div className="card-body">
+            <h5 className="card-title text-muted text-uppercase text-center" margin="0.5rem 0" font-size= "0.9rem" letter-spacing=" .1rem" font-weight="bold">Free</h5>
+            <h6 className="card-price text-center" hover="opacity-1" font-size= "3rem"  margin="0" >$0<span className="period" font-size="0.8rem">/month</span></h6>
+            {/* <hr> */}
+            <ul className="fa-ul" margin-bottom="1rem">
+              <List name="Single User" />
+              <List name="5GB Storage"/>
+              <List name="Unlimited Public Projects"/>
+              <List name="Community Access"/>
+              <Item name="Unlimited Private Projects" />
+              <Item  name="Dedicated Phone Support" />
+              <Item  name="Free Subdomain" />
+              <Item  name="Monthly Status Reports" />
+            </ul>
+            {/* </hr> */}
+            <div className="d-grid" >
+              <button className = "btn btn-primary text-uppercase" font-size="80%"  border-radius=" 5rem" letter-spacing=".1rem" font-weight= "bold" padding="1rem" opacity="0.7" transition= "all 0.2s">Button</button>
+            </div>
+          </div>
         </div>
+      </div>
+      {/* <!-- Plus Tier --> */}
+      <div className="col-lg-4" >
+        <div className="card mb-5 mb-lg-0" background-color="#007bff" background="linear-gradient(to right, #0062E6, #33AEFF)">
+          <div className="card-body">
+            <h5 className="card-title text-muted text-uppercase text-center" margin="0.5rem 0" font-size= "0.9rem" letter-spacing=" .1rem" font-weight="bold">Plus</h5>
+            <h6 className="card-price text-center"  hover="opacity-1" font-size= "3rem"  margin="0">$9<span className="period">/month</span></h6>
+            {/* <hr> */}
+            <ul className="fa-ul">
+              <List name=<strong>{"5 Users"}</strong> />
+              <List name="50GB Storage" />
+              <List name="Unlimited Public Projects" />
+              <List name="Community Access" />
+              <List name="Unlimited Private Projects"/>
+              <List name="Dedicated Phone Support" />
+              <List name="Free Subdomain" />
+              <Item name="Monthly Status Reports" />
+            </ul>
+            {/* </hr> */}
+            <div className="d-grid">
+              <button className="btn btn-primary text-uppercase" font-size="80%"  border-radius=" 5rem" letter-spacing=".1rem" font-weight= "bold" padding="1rem" opacity="0.7" transition= "all 0.2s">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Pro Tier --> */}
+      <div className="col-lg-4">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title text-muted text-uppercase text-center">Pro</h5>
+            <h6 className="card-price text-center">$49<span className="period">/month</span></h6>
+            {/* <hr> */}
+            <ul className="fa-ul">
+              <List ><span className="fa-li"><i className="fas fa-check"></i></span><strong>Unlimited Users</strong></List>
+              
+              <List><span className="fa-li"><i className="fas fa-check" name= "150GB Storage"></i></span></List>
+              <List><span className="fa-li"><i className="fas fa-check" name= "Unlimited Public Projects"></i></span></List>
+              <List><span className="fa-li"><i className="fas fa-check" name= "Community Access"></i></span></List>
+              <List><span className="fa-li"><i className="fas fa-check" name= "Unlimited Private Projects"></i></span></List>
+              <List><span className="fa-li"><i className="fas fa-check" name= "Dedicated Phone Support"></i></span></List>
+              <List><span className="fa-li"><i className="fas fa-check" name= "Unlimited Free Subdomains"></i></span><strong></strong> </List>
+              <Item><span className="fa-li"><i className="fas fa-check" name="Monthly Status Reports"></i></span></Item>
+            </ul>
+            {/* </hr> */}
+            <div className="d-grid">
+              <button className="btn btn-primary text-uppercase" font-size="80%"  border-radius=" 5rem" letter-spacing=".1rem" font-weight= "bold" padding="1rem" opacity="0.7" transition= "all 0.2s">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-    <div className="col">
-
-<div className='card' alt="card1" width="100%">
-  <div className='card-body'>
-    
-
-<h5>PRO</h5>
-<h6 className='card-price text-center'>$49/month</h6>
-<p>-----------------------------</p>
-<ul>
-<List name=<b>Unlimited Users</b> />
-<List name="150GB Storage"/>
-<List name="Unlimited Public Projects"/>
-<List name="Community Access"/>
-<List name="Unlimited Private Projects"/>
-<List name="Dedicated Phone Support"/>
-<List name= "Unlimited Free SubDomain"/>
-<List name="Monthly Status Report" status="disable"/>
-</ul>
-
-<button>BUTTON</button>
   </div>
-</div>
-</div>
-
-
-
-
-
-    </div>
-    </div>
-  )
+</section>
+)
 }
-
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
