@@ -130,113 +130,111 @@
 
 // export default App
 
+// import React from 'react'
+// function List(props)
+// {
+//   return(
+//     <div>✔{props.name}</div>
+//   )
+// }
+// function Item(props)
+// {
+//   return(
+//     <div>×{props.name}</div>
+//   )
+// }
 
+// function App() {
 
-import React from 'react'
-function List(props)
-{
-  return(
-    <div>✔{props.name}</div>
-  )
-}
-function Item(props)
-{
-  return(
-    <div>×{props.name}</div>
-  )
-}
+//   return (
+//     <div className="container">
+//       <h4>Result  HTML  Css  JavaScript  Resources</h4>
+//       <div className="row">
+//         <div className="col">
 
-function App() {
-
-  return (
-    <div className="container">
-      <h4>Result  HTML  Css  JavaScript  Resources</h4>
-      <div className="row">
-        <div className="col">
-
-      <div className='card' alt="card2" width="100%">
-        <div className='card-body'>
-        <h5>PLUS</h5>
-    <h6 className='card-price text-center'>$0/month</h6>
-    <p>-----------------------------</p>
+//       <div className='card' alt="card2" width="100%">
+//         <div className='card-body'>
+//         <h5>PLUS</h5>
+//     <h6 className='card-price text-center'>$0/month</h6>
+//     <p>-----------------------------</p>
     
-<ul><List name="Single User"/>
-  <List name="5GB Storage"/>
-  <List name="Unlimited Public Project"/>
-  <List name="Community Access"/>
-  <Item name="Unlimited Private Projects"/>
-  <Item name="Dedicated Phone Support"/>
-  <Item name="Free Sub Domain"/>
-  <Item name="Monthly Status Report"/>
+// <ul><List name="Single User"/>
+//   <List name="5GB Storage"/>
+//   <List name="Unlimited Public Project"/>
+//   <List name="Community Access"/>
+//   <Item name="Unlimited Private Projects"/>
+//   <Item name="Dedicated Phone Support"/>
+//   <Item name="Free Sub Domain"/>
+//   <Item name="Monthly Status Report"/>
   
   
-  </ul>
-    <button>BUTTON</button>
+//   </ul>
+//     <button>BUTTON</button>
      
-    </div>
-    </div>
-    </div>
+//     </div>
+//     </div>
+//     </div>
     
-    <div className="col">
+//     <div className="col">
 
-      <div className='card' alt="card1" width="100%">
-        <div className='card-body'>
+//       <div className='card' alt="card1" width="100%">
+//         <div className='card-body'>
           
     
-    <h5>Free</h5>
-    <h6 className='card-price text-center'>$9/month</h6>
-    <p>-----------------------------</p>
-    <ul>
-    <List name=<b>5 Users</b> />
-  <List name="50GB Storage"/>
-  <List name="Unlimited Public Projects"/>
-  <List name="Community Access"/>
-  <List name="Unlimited Private Projects"/>
-  <List name="Dedicated Phone Support"/>
-  <List name= "Free SubDomain"/>
-  <Item name="Monthly Status Report" status="disable"/>
-</ul>
+//     <h5>Free</h5>
+//     <h6 className='card-price text-center'>$9/month</h6>
+//     <p>-----------------------------</p>
+//     <ul>
+//     <List name=<b>5 Users</b> />
+//   <List name="50GB Storage"/>
+//   <List name="Unlimited Public Projects"/>
+//   <List name="Community Access"/>
+//   <List name="Unlimited Private Projects"/>
+//   <List name="Dedicated Phone Support"/>
+//   <List name= "Free SubDomain"/>
+//   <Item name="Monthly Status Report" status="disable"/>
+// </ul>
 
-      <button>BUTTON</button>
-        </div>
-    </div>
-    </div>
+//       <button>BUTTON</button>
+//         </div>
+//     </div>
+//     </div>
 
-    <div className="col">
+//     <div className="col">
 
-<div className='card' alt="card1" width="100%">
-  <div className='card-body'>
+// <div className='card' alt="card1" width="100%">
+//   <div className='card-body'>
     
 
-<h5>PRO</h5>
-<h6 className='card-price text-center'>$49/month</h6>
-<p>-----------------------------</p>
-<ul>
-<List name=<b>Unlimited Users</b> />
-<List name="150GB Storage"/>
-<List name="Unlimited Public Projects"/>
-<List name="Community Access"/>
-<List name="Unlimited Private Projects"/>
-<List name="Dedicated Phone Support"/>
-<List name= "Unlimited Free SubDomain"/>
-<List name="Monthly Status Report" status="disable"/>
-</ul>
+// <h5>PRO</h5>
+// <h6 className='card-price text-center'>$49/month</h6>
+// <p>-----------------------------</p>
+// <ul>
+// <List name=<b>Unlimited Users</b> />
+// <List name="150GB Storage"/>
+// <List name="Unlimited Public Projects"/>
+// <List name="Community Access"/>
+// <List name="Unlimited Private Projects"/>
+// <List name="Dedicated Phone Support"/>
+// <List name= "Unlimited Free SubDomain"/>
+// <List name="Monthly Status Report" status="disable"/>
+// </ul>
 
-<button>BUTTON</button>
-  </div>
-</div>
-</div>
-
-
+// <button>BUTTON</button>
+//   </div>
+// </div>
+// </div>
 
 
 
-    </div>
-    </div>
-  )
-}
 
-export default App
+
+//     </div>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
